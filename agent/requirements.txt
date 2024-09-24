@@ -1,0 +1,6 @@
+python_dotenv
+requests
+langchain_openai
+langchain
+langchain_core==0.2.35
+langchain_community
