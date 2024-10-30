@@ -64,7 +64,7 @@ if __name__ == "__main__":
         tools=render_text_description(tools),tool_names =",".join([t.name for t in tools])
     )
     
-    llm = ChatOpenAI(temperature=0,stop=["\nObservation"], callbacks=[AgentCallBackHandler()])
+    llm = ChatOpenAI(model="gpt-4o",temperature=0,stop=["\nObservation"], callbacks=[AgentCallBackHandler()])
     intermediate_steps =[]
     agent = {"input":lambda x:x["input"], "agent_scratchpad": lambda x:x["agent_scratchpad"]}|prompt | llm | ReActSingleInputOutputParser()
     #agent = {"input":lambda x:x["input"]}|prompt | llm | ReActSingleInputOutputParser()
