@@ -3,4 +3,12 @@ langchain-community
 langchain-core
 openai
 huggingface_hub
+langchain-openai 
+langchain-mongodb 
+langchain-experimental 
+ragas 
+pymongo 
+tqdm
+bs4
 python-dotenv
+numexpr
